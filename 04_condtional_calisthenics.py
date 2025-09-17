@@ -72,7 +72,24 @@ print("--------Exercise 4--------")
 print()
 print()
 
-year = int(input("Enter a year: ")) #SKIPPED THIS ONE 
+year = int(input("Enter a year: ")) 
+check_century = year / 100 
+check_leap = year / 400
+if isinstance(check_century, int) and isinstance(check_leap, int):
+    print(f"{year} is a century year and a leap year.")
+else:
+    print(f"{year} is not a century year and a leap year.") # I tried :)
+
+print()
+print()
+print("--------Exercise 4--------")
+print()
+
+
+
+
+
+#SKIPPED THIS ONE 
 
 
 '''
