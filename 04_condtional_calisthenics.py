@@ -75,10 +75,10 @@ print()
 year = int(input("Enter a year: ")) 
 check_century = year / 100 
 check_leap = year / 400
-if isinstance(check_century, int) and isinstance(check_leap, int):
+if check_century.is_integer() and check_leap.is_integer():
     print(f"{year} is a century year and a leap year.")
 else:
-    print(f"{year} is not a century year and a leap year.") # I tried :)
+    print(f"{year} is not a century year and a leap year.") # I DID IT :), Checked if the inputed year is a century year and a leap year and printed the appropriate message
 
 print()
 print()
@@ -138,7 +138,7 @@ elif a == b or b == c or a == c:
     print("The triange is Isosceles.")
 elif a != b and b != c and a != c:
     print("The triangle is Scalene.") 
-elif a + b <= c or a + c <= b or b + c <= a:
+else:
     print("Not a triangle.") # Determined the type of triangle based on the lengths of its sides and printed the appropriate message
 
 print()
