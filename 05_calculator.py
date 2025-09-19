@@ -79,7 +79,7 @@ elif operation == remainder:
         print("Error: Division by zero is not allowed. Abolutly not.")
     else:
         result = num1 % num2
-        print(f"Result: {result}") # 47-82 if / elif statments to perform the correct operation based on the users input
+        print(f"Result: {result}") # 47-82 if and elif statments to perform the correct operation based on the users input
 
 if operation >= 8 or operation <= 0:
     print("Error: Invalid operation choice. Please select a number between 1 and 7.") # 84-85 error message for invalid operation choice
