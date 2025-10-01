@@ -8,6 +8,9 @@ Allow the user to add new todo items
 Allow the user to remove existing todo items
 """
 todos = []
+with open ("todos.txt") as file:
+    contents = file.read()
+    print (contents)
 
 while True: # created a while loop to keep the program running until the user decides to exit
     print()
@@ -40,14 +43,10 @@ while True: # created a while loop to keep the program running until the user de
 
     
     
-    
-    
-    
-    
-    
-    
-    
     elif intsruction == "exit":
+        index = open("todos.txt", "a")
+        index.writelines(todos)
+        index.close()
         print("Exiting Todo Tracker. Goodbye!")
         break # Allows the user to exit the program
 
