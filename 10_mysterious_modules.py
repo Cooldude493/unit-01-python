@@ -28,7 +28,7 @@ print("--------Task 2--------")
 print()
 print()
 
-print("Contents of the current directory:", os.listdir('test_folder')) # List all files and directories in the current directory
+print("Contents of the current directory:", os.listdir("test_folder")) # List all files and directories in the current directory
 
 print()
 print()
@@ -69,8 +69,8 @@ print()
 
 print("Contents of the current directory:", os.listdir("data"))
 
-if os.path.isfile('data/config.txt'):
-    print("File path:", os.path.abspath('data/config.txt')) # Check if the file "config.txt" exists
+if os.path.isfile("data/config.txt"):
+    print("File path:", os.path.abspath("data/config.txt")) # Check if the file "config.txt" exists
 else:
     print("File not found.")
 
@@ -114,11 +114,11 @@ print()
 
 platform = sys.platform
 
-if platform.startswith('linux'):
+if platform.startswith("linux"):
     print("Platform: Linux")
-elif platform == 'win32':
+elif platform == "win32":
     print("Platform: Windows")
-elif platform == 'darwin':
+elif platform == "darwin":
     print("Platform: MacOS")
 else:
     print("Platform:", platform) # Print the platform the Python interpreter is running on
