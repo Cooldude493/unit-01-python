@@ -20,7 +20,7 @@ try:
     divide_numbers(10, 0)
 
 except ZeroDivisionError:
-    print("Error: Cannot divide by zero.")
+    print("Error: Cannot divide by zero.") # Try / except block to catch division by zero errors
 
 print()
 print()
@@ -45,7 +45,7 @@ def read_file(filename):
 try:
     read_file("nonexistent.txt")
 except FileNotFoundError:
-    print("Error: File not found.")
+    print("Error: File not found.") # Try / except block to catch file not found errors
 
 print()
 print()
@@ -70,7 +70,7 @@ try:
     get_item(my_list, 5)
 
 except IndexError:
-    print("The index you are trying to access is out of range.")
+    print("The index you are trying to access is out of range.") # Try / except block to catch index errors
 
 print()
 print()
@@ -95,7 +95,7 @@ try:
     get_value(my_dict, "c")
 
 except KeyError:
-    print("The key you are trying to access doen't exist in the dictionary.")
+    print("The key you are trying to access doen't exist in the dictionary.") # Try / except block to catch key errors
 
 print()
 print()
@@ -115,7 +115,7 @@ def process_file(filename):
     except FileNotFoundError:
         print("Error: File not found.")
     finally:
-        print("Finished attempting to process the file.")
+        print("Finished attempting to process the file.") # Try / except block to catch file not found errors with a finally block
 
 # Example usage:
 process_file("example.txt")
